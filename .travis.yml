@@ -9,5 +9,8 @@ install:
     - pip install scipy
     - pip install -e .
     - pip freeze
+    - pip install coveralls
 script:
-    - python setup.py test
+    - coverage run setup.py test
+after_success:
+    - coveralls
