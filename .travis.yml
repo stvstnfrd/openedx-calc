@@ -7,7 +7,7 @@ install:
     - sudo apt-get install gfortran
     - pip install numpy
     - pip install scipy
-    - pip freeze
     - pip install -e .
+    - pip freeze
 script:
     - python setup.py test
