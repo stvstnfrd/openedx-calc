@@ -10,4 +10,5 @@ setup(
         "numpy",
         "scipy",
     ],
+    test_suite="calc.tests",
 )
