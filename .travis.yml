@@ -10,6 +10,7 @@ addons:
             - gfortran
 install:
     - pip install -vvvv .
+    - pip install coveralls
 script:
     - coverage run setup.py test
 after_success:
