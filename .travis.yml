@@ -7,7 +7,7 @@ install:
     - sudo apt-get install gfortran
     - pip install numpy
     - pip install scipy
-    - pip install -e .
+    - pip install setup.py
     - pip freeze
     - pip install coveralls
 script:
