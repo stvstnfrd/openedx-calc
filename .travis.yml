@@ -11,7 +11,7 @@ addons:
 install:
     - pip install -vvvv numpy
     - pip install -vvvv scipy
-    - pip install -vvvv setup.py
+    - pip install -vvvv .
     - pip install -vvvv coveralls
 script:
     - coverage run setup.py test
