@@ -9,11 +9,9 @@ addons:
             - liblapack-dev
             - gfortran
 install:
-    - pip install -vvvv numpy
-    - pip install -vvvv scipy
     - pip install -vvvv .
-    - pip install -vvvv coveralls
 script:
     - coverage run setup.py test
 after_success:
+    - pip install -vvvv coveralls
     - coveralls
