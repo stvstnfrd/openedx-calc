@@ -13,5 +13,6 @@ setup(
     test_suite="calc.tests",
     tests_require=[
         "coverage",
+        "coveralls",
     ],
 )
