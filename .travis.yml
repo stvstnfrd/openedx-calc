@@ -13,6 +13,6 @@ install:
     - pip install -vvvv .
     - pip install coveralls
 script:
-    - coverage run setup.py test
+    - make test
 after_success:
     - coveralls
